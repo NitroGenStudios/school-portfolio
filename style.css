@@ -1,11 +1,11 @@
 body
 {
-    background-color: rgb(202, 203, 212);
+    background-color: rgb(51, 52, 56);
 }
 
 nav
 {
-    background-color: white;
+    background-color: rgb(78, 76, 78);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.379);
     border-bottom-left-radius: 24px;
     border-top-left-radius: 24px;
@@ -31,20 +31,36 @@ nav ul
 
 nav li
 {
+    border-left: 2px solid rgb(159, 132, 248);
+    padding-left: 5px;
+
     margin-right: 20px;
 }
 
 a
 {
-    color: gray;
+    transition: all 0.2s;
+    color: rgb(159, 132, 248);
     text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(231, 223, 255);
+    text-shadow: 0px 0px 10px white;
+}
+
+h1
+{
+    color: rgb(255, 189, 108);
+    font-size: 48px;
 }
 
 blockquote
 {
-    border-left: 3px solid orangered;
+    border-left: 3px solid rgb(248, 126, 81);
     padding: 20px;
-    color: orangered;
+    color: rgb(248, 126, 81);
 }
 
 .kislogo
@@ -63,6 +79,8 @@ blockquote
 
 .btn
 {
+    transition: all 0.2s;
+
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -70,8 +88,15 @@ blockquote
 
     border-radius: 30px;
     background-color: white;
-    color: rgb(202, 203, 212);
+    color: rgb(51, 52, 56);
     font-weight: bold;
+}
+
+.btn:hover
+{
+    background-color: rgb(248, 126, 81);
+    color: white;
+    scale: 1.1;
 }
 
 .container
