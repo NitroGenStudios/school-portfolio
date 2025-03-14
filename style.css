@@ -1,6 +1,7 @@
 body
 {
     background-color: rgb(51, 52, 56);
+    color: lightgray;
 }
 
 nav
@@ -12,7 +13,7 @@ nav
 
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 100vw;
     height: 48px;
 
@@ -54,6 +55,12 @@ h1
 {
     color: rgb(255, 189, 108);
     font-size: 48px;
+}
+
+h2
+{
+    color: rgb(130, 108, 255);
+    font-size: 32px;
 }
 
 blockquote
@@ -101,8 +108,9 @@ blockquote
 
 .container
 {
-    width: 100vw;
-    height: 100vh;
+    max-width: 800px;
+    padding-bottom: 256px;
+    margin: auto;
 }
 
 .profile
@@ -138,4 +146,20 @@ blockquote
     max-height: 300px;
     border-radius: 50%;
     margin-right: 50px;
+}
+
+.about-container
+{
+    margin-top: 150px;
+}
+
+.work-container
+{
+    margin-top: 150px;
+}
+
+.work-box
+{
+    border: 3px dimgray solid;
+    border-radius: 32px;
 }
