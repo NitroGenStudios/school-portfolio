@@ -12,7 +12,8 @@ function CreateProjectCard(data)
     return `<div class="project-container">
                 <div class="project-layout">
                     <div class="project-img">
-                        <img id="img-${data.id}" src="${data.photo_url}" alt="">
+                        <img id="img-${data.id}" src="${data.photo_url}">
+                        <img class="img-glow" src="${data.photo_url}">
                     </div>
                     <div class="project-description">
                         <h3>${data.title}</h3>
