@@ -2,6 +2,8 @@ body
 {
     background-color: rgb(51, 52, 56);
     color: lightgray;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 nav
@@ -11,7 +13,7 @@ nav
     border-bottom-left-radius: 24px;
     border-top-left-radius: 24px;
 
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100vw;
@@ -20,6 +22,8 @@ nav
     display: flex;
     flex-direction: row;
     justify-content: right;
+
+    z-index: 100;
 }
 
 nav ul
@@ -131,6 +135,7 @@ blockquote
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -158,8 +163,40 @@ blockquote
     margin-top: 150px;
 }
 
-.work-box
+.project-container
 {
     border: 3px dimgray solid;
     border-radius: 32px;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.project-layout
+{
+    display: flex;
+}
+
+.project-img
+{
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 47.5%;
+    margin-right: 2.5%;
+}
+
+.project-img img
+{
+    height: 400px;
+    transform: rotateZ(-10deg) translateY(-100px) translateX(-125px);
+}
+
+.project-description
+{
+    width: 47.5%;
+}
+
+.project-links
+{
+    display: flex;
+    flex-direction: column;
 }
