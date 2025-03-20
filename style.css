@@ -229,6 +229,44 @@ blockquote
     user-select: none;
 }
 
+.contact-container
+{
+    margin-top: 128px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.contact-form input
+{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 16px;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.187);
+}
+
+.contact-form input[type=button]
+{
+    background-color: rgb(130, 108, 255);
+    color: white;
+}
+
 @media only screen and (max-width: 600px)
 {
     .project-layout
@@ -277,5 +315,18 @@ blockquote
         border-left: none;
         border-right: none;
         border-radius: 0px;
+    }
+
+    .contact-container
+    {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 95%;
+    }
+
+    .contact-map
+    {
+        margin-top: 10px;
     }
 }
