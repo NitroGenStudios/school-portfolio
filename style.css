@@ -4,6 +4,7 @@ body
     color: lightgray;
     overflow-x: hidden;
     margin: 0;
+    user-select: text;
 }
 
 nav
@@ -247,6 +248,7 @@ blockquote
 
     background-color: whitesmoke;
     padding: 20px;
+    margin: 10px;
     border-radius: 16px;
 }
 
@@ -261,10 +263,22 @@ blockquote
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.187);
 }
 
+.contact-map
+{
+    margin: 10px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
 .contact-form input[type=button]
 {
     background-color: rgb(130, 108, 255);
     color: white;
+}
+
+.contact-form input[type=text-area]
+{
+    height: 5rem;
 }
 
 @media only screen and (max-width: 600px)
